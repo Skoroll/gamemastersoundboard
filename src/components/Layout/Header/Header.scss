@@ -1,0 +1,70 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
+
+.header{
+    padding: $padding-elem;
+    @include flex-column;
+    gap: $gap-base;
+
+    img{
+        width: 70px;
+        height: 70px;
+        margin: auto;
+    }
+
+    .nav{
+        position: relative;
+        z-index: 900;
+        margin: auto;
+
+        &__theme{
+            @include ul-reset;
+            @include flex-wrap;
+            gap : $gap-base;
+
+            p{
+                @include btn-base;
+                cursor: pointer;
+                background-color: $primary-color;
+                margin: 0;
+            }
+
+            &--nature{
+                left: 65px;
+            }
+
+            &--dungeon{
+                left: 140px;
+            }
+
+            &--details{
+                position: absolute;
+                display: none;
+                width: 100px;
+                background: $primary-color;
+                border-radius: $radius-base;
+                @include ul-reset;
+                li{
+                    @include btn-base;
+                    
+                }
+
+                
+            }
+
+            &--open{
+                display: block;
+            }
+        }
+
+        ul{
+            cursor: pointer;
+            li{
+                &:hover{
+                    background-color: $secondary-color;
+                    color: $text-light;
+                }
+            }
+        }
+    }
+}

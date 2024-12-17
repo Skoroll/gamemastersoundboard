@@ -1,0 +1,18 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+
+.go-up{
+    position: fixed;
+    z-index: 950;
+    bottom: 50px;
+    left: 10px;
+    @include flex-column;
+    background-color: rgba(128, 128, 128, 0.486);
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    color: $text-light;
+    border-radius: 50%;
+    border: 1px solid $text-light;
+}

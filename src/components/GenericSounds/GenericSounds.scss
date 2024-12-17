@@ -1,0 +1,41 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+
+.generic-sounds,
+.sub-details {
+
+    &__player {
+
+        &--name {
+
+            span {
+                font-weight: 600;
+                margin-left: 25px;
+            }
+        }
+    }
+
+    &__list {
+        padding: $padding-elem;
+
+        ul {
+            @include ul-reset;
+            @include flex-wrap;
+            gap: calc($gap-base /2);
+        }
+
+        &--item {
+
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+
+            &.active {
+                background-color: $secondary-color !important;
+            }
+
+            &:hover {
+                background-color: $primary-color-opacity;
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.banner {
+    position: relative;
+    display: flex;
+    width: 85vw;
+    height: 200px;
+    background: center no-repeat cover;
+    margin: 20px auto;
+
+    &__img{
+        
+        width: 100%;
+        img{
+            position: absolute;
+            width: 100%;
+            max-height: 200px;
+            object-fit:cover;
+
+        }
+    }
+
+    &__content {
+        @include flex-column;
+        position: absolute;
+        bottom: 0;
+   
+        width: 100%;
+        box-sizing: border-box;
+        background: rgba(0, 0, 0, 0.575);
+        z-index: 899;
+        padding: $padding_elem;
+        color: $text_light;
+
+        .banner__location,
+        .banner__flavor {
+            margin: 0;
+        }
+
+        .banner__location {
+            font-weight: 600;
+            font-size: 20px;
+        }
+    }
+}

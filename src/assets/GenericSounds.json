@@ -1,0 +1,80 @@
+[
+    {
+        "id": 1,
+        "icon": "🙍",
+        "name": " Cri de femme",
+        "sound": "/Sounds/Generic/Sounds/woman_scream.mp3"
+    },
+    {
+        "id": 2,
+        "icon": "🙎‍♂️",
+        "name": "Cri d'homme",
+        "sound":"/Sounds/Generic/Sounds/man_scream.mp3" 
+    },
+    {
+        "id": 3,
+        "icon": "💥​",
+        "name": " Explosion",
+        "sound": "/Sounds/Generic/Sounds/explosion.mp3"
+    },
+    {
+        "id": 4,
+        "icon": "🥣​",
+        "name": " Cuisiner",
+        "sound": "/Sounds/Generic/Sounds/cooking.mp3"
+    },
+    {
+        "id": 5,
+        "icon": "🔥",
+        "name": " Feu de camp",
+        "sound": "/Sounds/Generic/Sounds/fireplace.mp3"
+    },
+    {
+        "id": 6,
+        "icon": "🐔",
+        "name": " Poule",
+        "sound": "/Sounds/Generic/Sounds/chicken.mp3"
+    },
+    {
+        "id": 7,
+        "icon": "👹",
+        "name": " Grognement 1",
+        "sound": "/Sounds/Generic/Sounds/growl.mp3"
+    },
+    {
+        "id": 8,
+        "icon": "👹",
+        "name": " Grognement 2",
+        "sound": "/Sounds/Generic/Sounds/monster.mp3"
+    },
+    {
+        "id": 9,
+        "icon": "🚶‍♂️",
+        "name": " Pas",
+        "sound": "/Sounds/Generic/Sounds/steps.mp3"
+    },
+    {
+        "id": 10,
+        "icon": "🏹",
+        "name": " Flèche",
+        "sound": "/Sounds/Generic/Sounds/arrow.mp3"
+    },
+    {
+        "id": 11,
+        "icon": "🗡️",
+        "name": " Epée",
+        "sound": "/Sounds/Generic/Sounds/sword.mp3"
+    },
+    {
+        "id": 12,
+        "icon": "💰",
+        "name": " Pièces",
+        "sound": "/Sounds/Generic/Sounds/coins.mp3"
+    },
+    {
+        "id": 13,
+        "icon": "🚪",
+        "name": " Porte (bois)",
+        "sound": "/Sounds/Generic/Sounds/wooden-door.mp3"
+    }
+]

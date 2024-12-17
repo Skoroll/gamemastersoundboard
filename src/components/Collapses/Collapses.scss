@@ -1,0 +1,57 @@
+ @import "../../styles/mixins.scss";
+ @import "../../styles/variables.scss";
+
+.collapse {
+  border: $border-transparent;
+  border-radius: 4px;
+  margin:  0;
+  overflow: hidden;
+  
+
+  &--first{
+    @include flex-wrap;
+    align-items: baseline;
+    gap: $gap-base;
+  }
+
+  &__header{
+    @include flex-wrap;
+    flex-direction: row-reverse;
+  
+    align-items: baseline;
+    border: $border-transparent;
+    transition: background-color 0.3s;
+    background-color: $background-color;
+    cursor: pointer;
+
+    span{
+      margin: auto auto auto 50px;
+    }
+
+    &--title {
+      padding: $padding-elem;
+      margin: auto 45% auto auto ;
+      font-weight: 500;
+    }
+
+
+    &:hover {
+      background: $primary-color-opacity;
+      color: $text-light;
+      border-color: black;
+    }
+  }
+
+  &__title {
+    margin: 0;
+  }
+
+  &__icon {
+    font-size: 1rem;
+  }
+
+  &__content {
+    padding: $padding-elem;
+    
+  }
+}

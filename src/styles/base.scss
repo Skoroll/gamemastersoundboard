@@ -1,0 +1,34 @@
+ @import "./mixins.scss";
+ @import "./variables.scss";
+
+body{
+    margin: 0;
+    padding: 0;
+    background: $background-color;
+    overflow: visible;
+    font-family: 'Lora', serif;
+}
+
+main{
+    padding: $padding-page;
+}
+
+
+.btn{
+    @include btn-base;
+
+}
+
+
+h1, h2, h3, h4, h5, h6{
+    @include title;
+    font-family: 'Cinzel', serif;
+}
+
+.heading{
+    @include title;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-family: 'Cinzel', serif;
+}

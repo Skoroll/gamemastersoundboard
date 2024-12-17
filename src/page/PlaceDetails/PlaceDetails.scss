@@ -1,0 +1,16 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+
+.place-details{
+    position: relative;
+
+    &--location{
+        @include flex-column;
+        @include centering;
+        margin: $padding-page auto;
+
+        h1, p{
+            margin: 0 auto 0 0;
+        }
+    }
+}

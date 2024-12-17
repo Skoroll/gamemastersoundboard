@@ -1,0 +1,192 @@
+[
+  {
+    "id": 1,
+    "name": "Ville",
+    "refName": "Ville",
+    "icon": "/PlacesImg/Main/Town.webp",
+    "subCategories": [
+      {
+        "name": "Marché",
+        "subRef": "Marche",
+        "image": "/PlacesImg/SubTown/Market.webp",
+        "music": "/Sounds/Town/Market/Music/market_music.mp3",
+        "soundscape": "/Sounds/Town/Market/Soundscape/market_chatter.mp3",
+        "sounds": [
+                    {
+                      "id": 1,
+                      "icon": "🐎",
+                      "name" : "Chariot",
+                      "sound": "/Sounds/Town/Market/Sounds/cart.mp3"
+                    },
+                    {
+                      "id": 2,
+                      "icon": "",
+                      "name" : "Rires",
+                      "sound": "/Sounds/Town/Market/Sounds/crowd-laughing.mp3"
+                    },
+                    {
+                      "id": 3,
+                      "icon": "",
+                      "name" : "Forgeron",
+                      "sound": "/Sounds/Town/Market/Sounds/blacksmith.mp3"
+                    },
+                    {
+                      "id": 4,
+                      "icon": "",
+                      "name" : "Cloches",
+                      "sound": "/Sounds/Town/Market/Sounds/church-bell.mp3"
+                    }
+        ]
+      },
+      {
+        "name": "Taverne",
+        "subRef": "Taverne",
+        "image": "/PlacesImg/SubTown/tavern.webp",
+        "music": "",
+        "soundscape": [],
+        "sounds": []
+      },
+      {
+        "name": "Magasin",
+        "subRef": "Magasin",
+        "image": "/PlacesImg/SubTown/Shop.webp",
+        "music": "",
+        "soundscape": [],
+        "sounds": []
+      },
+      {
+        "name": "Eglise",
+        "subRef": "Eglise",
+        "image": "/PlacesImg/SubTown/Church.webp",
+        "music": "",
+        "soundscape": [],
+        "sounds": []
+      },
+      {
+        "name": "Château",
+        "subRef": "Chateau",
+        "image": "/PlacesImg/SubTown/Castle.webp",
+        "music": "",
+        "soundscape": [],
+        "sounds": []
+      }
+    ],
+    "description": "Petite ou grande, vos héros auront beaucoup à y faire."
+  },
+  {
+    "id": 2,
+    "name": "Nature",
+    "refName": "Nature",
+    "icon": "/PlacesImg/Main/Nature.webp",
+    "music": "/Sounds/Forest/music/forest-music.mp3",
+    "subCategories": [
+      {
+        "name": "Forêt",
+        "subRef": "Foret",
+        "image": "/PlacesImg/SubNature/Forest.webp",
+        "music": "",
+        "soundscape": [],
+        "sounds": []
+      },
+      {
+        "name": "Champs",
+        "subRef": "Champs",
+        "image": "/PlacesImg/SubNature/Field.webp",
+        "music": "",
+        "soundscape": [],
+        "sounds": []
+      },
+      {
+        "name": "Grotte",
+        "subRef": "Grotte",
+        "image": "/PlacesImg/SubNature/Cave.webp",
+        "music": "",
+        "soundscape": [],
+        "sounds": []
+      },
+      {
+        "name": "Montagne",
+        "subRef": "Montagne",
+        "image": "/PlacesImg/SubNature/Mountain.webp",
+        "music": "",
+        "soundscape": [],
+        "sounds": []
+      }
+    ],
+    "description": "Bien des dangers guêtent au détour d'une route ou d'un buisson."
+  },
+  {
+    "id": 4,
+    "name": "Donjon",
+    "refName": "Donjon",
+    "icon": "/PlacesImg/Main/Dungeon.webp",
+    "subCategories": [
+      {
+        "name": "Tombe",
+        "subRef": "Tombe",
+        "image": "/PlacesImg/SubDungeon/Tomb.webp",
+        "music": "",
+        "soundscape": [],
+        "sounds": []
+      },
+      {
+        "name": "Donjon",
+        "subRef": "Donjon",
+        "image": "/PlacesImg/SubDungeon/Dungeon.webp",
+        "music": "",
+        "soundscape": [],
+        "sounds": []
+      },
+      {
+        "name": "Temple",
+        "subRef": "Temple",
+        "image": "/PlacesImg/SubDungeon/Temple.webp",
+        "music": "",
+        "soundscape": [],
+        "sounds": []
+      }
+    ],
+    "description": "Difficile de voir, les héros ont l'oreille bien tendue à l'afût du moindre danger."
+  },
+  {
+    "id": 5,
+    "name": "Mer",
+    "refName": "Mer",
+    "icon": "/PlacesImg/Main/Sea.webp",
+    "subCategories": [
+      {
+        "name": "Îles",
+        "subRef": "Îles",
+        "image": "/PlacesImg/SubSea/Island.webp",
+        "music": "",
+        "soundscape": [],
+        "sounds": []
+      },
+      {
+        "name": "Pleine mer",
+        "subRef": "Pleine_mer",
+        "image": "/PlacesImg/SubSea/Sea.webp",
+        "music": "",
+        "soundscape": [],
+        "sounds": []
+      },
+      {
+        "name": "Plage",
+        "subRef": "Plage",
+        "image": "/PlacesImg/SubSea/Beach.webp",
+        "music": "",
+        "soundscape": [],
+        "sounds": []
+      },
+      {
+        "name": "Falaises",
+        "subRef": "Falaises",
+        "image": "/PlacesImg/SubSea/Cliff.webp",
+        "music": "",
+        "soundscape": [],
+        "sounds": []
+      }
+    ],
+    "description": "Braver les dangers de la mer est un défi que seul peu d'aventuriers oser relever."
+  }
+]

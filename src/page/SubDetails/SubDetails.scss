@@ -1,0 +1,13 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+
+.sub-details{
+    position: relative;
+}
+
+.div-sounds{
+    margin: 25px;
+    background-color: $secondary-background;
+    padding: $padding-elem;
+    border-radius: $radius-base;
+}

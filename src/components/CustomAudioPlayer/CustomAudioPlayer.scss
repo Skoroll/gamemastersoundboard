@@ -1,0 +1,139 @@
+@import "../../styles/mixins.scss";
+@import "../../styles//variables.scss";
+
+.custom-audio-player {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+  
+    .controls {
+      @include flex-wrap;
+      position: relative;
+      justify-content: space-evenly;
+      align-items: center;
+
+      .active{
+          background-color: $background-color;
+          border: 1px solid $text-base !important;
+          color: $text-base;
+      }
+      .loop-button{
+        border: 1px solid transparent;
+        width: 35px;
+      }
+
+      &__buttons{
+        @include flex-wrap;
+        gap: $gap-base;
+        margin: auto 40px auto auto;
+      }
+
+      &__play-pause{
+        width: 35px;
+      }
+
+
+    }
+  
+
+    .progress-bar {
+      width: 80%;
+      margin: auto;
+    }
+  
+  
+    .volume-control {
+      @include flex-column;
+      position: absolute;
+      left: 0px;
+      top: -18px;
+      justify-content: space-between;
+      align-items: center;
+      width: 40px;
+      transform: rotate(-90deg);
+
+      .fa-volume-high{
+        position: absolute;
+        left: -20px;
+        top: 0;
+        color: $primary-color;
+        transform: rotate(90deg);
+      }
+
+      label{
+        margin: auto auto auto 0;
+        font-weight: 500;
+      }
+    }
+  
+    .time {
+      display: flex;
+      font-size: 10px;
+      justify-content: left;
+      padding-left: 5px;
+    }
+  }
+  
+  .custom-audio-player {
+    input[type="range"] {
+      width: 100%;
+      appearance: none; // Supprime les styles par défaut pour permettre la personnalisation
+  
+      // Style de la piste (track)
+      &::-webkit-slider-runnable-track {
+        height: 8px;
+        background-color: $primary-color; 
+        border-radius: 3px;
+      }
+  
+      &::-moz-range-track {
+        height: 6px;
+        background-color: $primary-color;
+        border-radius: 3px;
+      }
+  
+      &::-ms-track {
+        height: 6px;
+        background-color: $primary-color;
+        border-radius: 3px;
+        border: none;
+        color: transparent; // Supprime les styles de bordure inutiles
+      }
+  
+      // Style du curseur (thumb)
+      &::-webkit-slider-thumb {
+        appearance: none;
+        width: 18px;
+        height: 18px;
+        background-color: $text-light; // Couleur du curseur
+        border: 2px solid $primary-color; // Bordure en couleur principale
+        border-radius: 50%; // Curseur rond
+        cursor: pointer;
+        margin-top: -5px; // Centrage sur la piste
+      }
+  
+      &::-moz-range-thumb {
+        width: 12px;
+        height: 22px;
+        background-color: $text-light;
+        border: 2px solid $primary-color;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+  
+      &::-ms-thumb {
+        width: 12px;
+        height: 12px;
+        background-color: $text-light;
+        border: 2px solid $primary-color;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+  
+      // Ajout de styles pour le focus
+      &:focus {
+        outline: none;
+      }
+    }
+  }

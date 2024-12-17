@@ -1,0 +1,29 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.go-back-link{
+    position: absolute;
+    @include flex-wrap;
+    top: -50px;
+    border: none;
+    background: none;
+    padding: $padding-btn;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover{
+      
+        .fa-arrow-left{
+            left: -10px; 
+        }
+    }
+}
+p{
+    margin: 0;
+}
+.fa-arrow-left{
+    position: absolute;
+    left: 0;
+    transition: left 1s ease;
+  
+}
