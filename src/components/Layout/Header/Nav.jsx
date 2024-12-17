@@ -1,12 +1,22 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Places from "../../../assets/Places/PlacesCards.json";
+
 
 function Nav() {
     const [openMenu, setOpenMenu] = useState(null);
+    const navigate = useNavigate();
 
+    // Fonction pour basculer l'ouverture/fermeture des sous-menus
     function toggleMenu(menuName) {
         setOpenMenu((prevMenu) => (prevMenu === menuName ? null : menuName));
     }
+
+    // Fonction pour naviguer vers une sous-catégorie
+    const handleClick = (placeRef, subRef) => {
+        navigate(`/${placeRef.toLowerCase()}/${subRef.toLowerCase()}`);
+        window.location.reload(false);
+    };
 
     return (
         <nav className="nav">
@@ -25,8 +35,14 @@ function Nav() {
                                     openMenu === place.refName ? "nav__theme--open" : ""
                                 }`}
                             >
-                                {place.subCategories.map((subCategory, index) => (
-                                    <li className="btn" key={index}>{subCategory.name}</li>
+                                {place.subCategories.map((subCategory) => (
+                                    <li
+                                        key={subCategory.subRef}
+                                        className="btn"
+                                        onClick={() => handleClick(place.refName, subCategory.subRef)} // Ajout de la gestion du clic
+                                    >
+                                        {subCategory.name}
+                                    </li>
                                 ))}
                             </ul>
                         )}

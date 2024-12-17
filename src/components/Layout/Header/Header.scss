@@ -22,6 +22,12 @@
             @include flex-wrap;
             gap : $gap-base;
 
+
+            &--container{
+                width: 70px;
+            }
+
+
             p{
                 @include btn-base;
                 cursor: pointer;
@@ -43,26 +49,29 @@
                 width: 100px;
                 background: $primary-color;
                 border-radius: $radius-base;
+                
                 @include ul-reset;
                 li{
-                    @include btn-base;
-                    
+                    @include btn-base; 
                 }
 
                 
             }
 
             &--open{
-                display: block;
+                @include flex-column;
+                text-align: center;
             }
         }
 
         ul{
             cursor: pointer;
             li{
+               
                 &:hover{
                     background-color: $secondary-color;
                     color: $text-light;
+
                 }
             }
         }

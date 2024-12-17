@@ -9,8 +9,8 @@
         "name": "Marché",
         "subRef": "Marche",
         "image": "/PlacesImg/SubTown/Market.webp",
-        "music": "/Sounds/Town/Market/Music/market_music.mp3",
-        "soundscape": "/Sounds/Town/Market/Soundscape/market_chatter.mp3",
+        "music": "/Sounds/Town/Market/Music/music.mp3",
+        "soundscape": "/Sounds/Town/Market/Soundscape/soundscape.mp3",
         "sounds": [
                     {
                       "id": 1,
@@ -42,25 +42,88 @@
         "name": "Taverne",
         "subRef": "Taverne",
         "image": "/PlacesImg/SubTown/tavern.webp",
-        "music": "",
-        "soundscape": [],
-        "sounds": []
+        "music": "/Sounds/Town/Tavern/Music/music.mp3",
+        "soundscape": "/Sounds/Town/Tavern/Soundscape/soundscape.mp3",
+        "sounds": [                    
+          {
+            "id": 1,
+            "icon": "",
+            "name" : "Bris de verre",
+            "sound": "/Sounds/Town/Tavern/Sounds/glass-smash.mp3"
+          },
+          {
+            "id": 2,
+            "icon": "",
+            "name" : "Barde 1",
+            "sound": "/Sounds/Town/Tavern/Sounds/bard1.mp3"
+          },
+          {
+            "id": 3,
+            "icon": "",
+            "name" : "Barde 2",
+            "sound": "/Sounds/Town/Tavern/Sounds/bard2.mp3"
+          },
+          {
+            "id": 4,
+            "icon": "",
+            "name" : "",
+            "sound": "/Sounds/Town/Tavern/Sounds/.mp3"
+          },
+          {
+            "id": 5,
+            "icon": "",
+            "name" : "",
+            "sound": "/Sounds/Town/Tavern/Sounds/.mp3"
+          }
+      ]
       },
       {
         "name": "Magasin",
         "subRef": "Magasin",
         "image": "/PlacesImg/SubTown/Shop.webp",
-        "music": "",
-        "soundscape": [],
-        "sounds": []
+        "music": "/Sounds/Town/Shop/Music/music.mp3",
+        "soundscape": "/Sounds/Town/Shop/Soundscape/soundscape.mp3",
+        "sounds": [
+          {
+            "id": 1,
+            "icon": "",
+            "name" : "Forgeron",
+            "sound": "/Sounds/Town/Shop/Sounds/blacksmith.mp3"
+          },
+          {
+            "id": 2,
+            "icon": "",
+            "name" : "Alchimie",
+            "sound": "/Sounds/Town/Shop/Sounds/potion.mp3"
+          },
+          {
+            "id": 3,
+            "icon": "",
+            "name" : "Cloche d'entrée",
+            "sound": "/Sounds/Town/Shop/Sounds/shop-bell.mp3"
+          },
+          {
+            "id": 4,
+            "icon": "",
+            "name" : "Ecriture",
+            "sound": "/Sounds/Town/Shop/Sounds/writing.mp3"
+          }
+        ]
       },
       {
         "name": "Eglise",
         "subRef": "Eglise",
         "image": "/PlacesImg/SubTown/Church.webp",
-        "music": "",
-        "soundscape": [],
-        "sounds": []
+        "music": "/Sounds/Town/Church/Music/music.mp3",
+        "soundscape": "/Sounds/Town/Church/Soundscape/soundscape.mp3",
+        "sounds": [
+          {
+            "id": 1,
+            "icon": "",
+            "name" : "Pas écho",
+            "sound": "/Sounds/Town/Shop/Sounds/steps.mp3"
+          }
+        ]
       },
       {
         "name": "Château",
