@@ -9,103 +9,130 @@
         "name": "Marché",
         "subRef": "Marche",
         "image": "/PlacesImg/SubTown/Market.webp",
-        "music": "/Sounds/Town/Market/Music/music.mp3",
+        "music": [
+          {
+            "name": "Calmes",
+            "audio": "/Sounds/Town/Market/Music/music.mp3"
+          },
+          {
+            "name": "Combat",
+            "audio": "/Sounds/Town/Market/Music/music.mp3"
+          }
+        ],
         "soundscape": "/Sounds/Town/Market/Soundscape/soundscape.mp3",
         "sounds": [
-                    {
-                      "id": 1,
-                      "icon": "🐎",
-                      "name" : "Chariot",
-                      "sound": "/Sounds/Town/Market/Sounds/cart.mp3"
-                    },
-                    {
-                      "id": 2,
-                      "icon": "",
-                      "name" : "Rires",
-                      "sound": "/Sounds/Town/Market/Sounds/crowd-laughing.mp3"
-                    },
-                    {
-                      "id": 3,
-                      "icon": "",
-                      "name" : "Forgeron",
-                      "sound": "/Sounds/Town/Market/Sounds/blacksmith.mp3"
-                    },
-                    {
-                      "id": 4,
-                      "icon": "",
-                      "name" : "Cloches",
-                      "sound": "/Sounds/Town/Market/Sounds/church-bell.mp3"
-                    }
+          {
+            "id": 1,
+            "icon": "🐎",
+            "name": "Chariot",
+            "sound": "/Sounds/Town/Market/Sounds/cart.mp3"
+          },
+          {
+            "id": 2,
+            "icon": "",
+            "name": "Rires",
+            "sound": "/Sounds/Town/Market/Sounds/crowd-laughing.mp3"
+          },
+          {
+            "id": 3,
+            "icon": "",
+            "name": "Forgeron",
+            "sound": "/Sounds/Town/Market/Sounds/blacksmith.mp3"
+          },
+          {
+            "id": 4,
+            "icon": "",
+            "name": "Cloches",
+            "sound": "/Sounds/Town/Market/Sounds/church-bell.mp3"
+          }
         ]
       },
       {
         "name": "Taverne",
         "subRef": "Taverne",
         "image": "/PlacesImg/SubTown/tavern.webp",
-        "music": "/Sounds/Town/Tavern/Music/music.mp3",
+        "music": [
+          {
+            "name": "Calmes",
+            "audio": "/Sounds/Town/Tavern/Music/music.mp3"
+          },
+          {
+            "name": "Combat",
+            "audio": "/Sounds/Town/Market/Music/fight.mp3"
+          }
+        ],
         "soundscape": "/Sounds/Town/Tavern/Soundscape/soundscape.mp3",
-        "sounds": [                    
+        "sounds": [
           {
             "id": 1,
             "icon": "",
-            "name" : "Bris de verre",
+            "name": "Bris de verre",
             "sound": "/Sounds/Town/Tavern/Sounds/glass-smash.mp3"
           },
           {
             "id": 2,
             "icon": "",
-            "name" : "Barde 1",
+            "name": "Barde 1",
             "sound": "/Sounds/Town/Tavern/Sounds/bard1.mp3"
           },
           {
             "id": 3,
             "icon": "",
-            "name" : "Barde 2",
+            "name": "Barde 2",
             "sound": "/Sounds/Town/Tavern/Sounds/bard2.mp3"
           },
           {
             "id": 4,
             "icon": "",
-            "name" : "",
+            "name": "",
             "sound": "/Sounds/Town/Tavern/Sounds/.mp3"
           },
           {
             "id": 5,
             "icon": "",
-            "name" : "",
+            "name": "",
             "sound": "/Sounds/Town/Tavern/Sounds/.mp3"
           }
-      ]
+        ]
       },
       {
         "name": "Magasin",
         "subRef": "Magasin",
         "image": "/PlacesImg/SubTown/Shop.webp",
-        "music": "/Sounds/Town/Shop/Music/music.mp3",
+        "music": [
+          {
+            "name": "Calmes",
+            "audio": "/Sounds/Town/Shop/Music/music.mp3"
+          },
+          {
+            "name": "Combat",
+            "audio": ""
+          }
+        ],
         "soundscape": "/Sounds/Town/Shop/Soundscape/soundscape.mp3",
         "sounds": [
           {
             "id": 1,
             "icon": "",
-            "name" : "Forgeron",
+            "name": "Forgeron",
             "sound": "/Sounds/Town/Shop/Sounds/blacksmith.mp3"
           },
           {
             "id": 2,
             "icon": "",
-            "name" : "Alchimie",
+            "name": "Alchimie",
             "sound": "/Sounds/Town/Shop/Sounds/potion.mp3"
           },
           {
             "id": 3,
             "icon": "",
-            "name" : "Cloche d'entrée",
+            "name": "Cloche d'entrée",
             "sound": "/Sounds/Town/Shop/Sounds/shop-bell.mp3"
           },
           {
             "id": 4,
             "icon": "",
-            "name" : "Ecriture",
+            "name": "Ecriture",
             "sound": "/Sounds/Town/Shop/Sounds/writing.mp3"
           }
         ]
@@ -114,13 +141,22 @@
         "name": "Eglise",
         "subRef": "Eglise",
         "image": "/PlacesImg/SubTown/Church.webp",
-        "music": "/Sounds/Town/Church/Music/music.mp3",
+        "music": [
+          {
+            "name": "Calmes",
+            "audio": "/Sounds/Town/Church/Music/music.mp3"
+          },
+          {
+            "name": "Combat",
+            "audio": ""
+          }
+        ],
         "soundscape": "/Sounds/Town/Church/Soundscape/soundscape.mp3",
         "sounds": [
           {
             "id": 1,
             "icon": "",
-            "name" : "Pas écho",
+            "name": "Pas écho",
             "sound": "/Sounds/Town/Shop/Sounds/steps.mp3"
           }
         ]
@@ -129,7 +165,16 @@
         "name": "Château",
         "subRef": "Chateau",
         "image": "/PlacesImg/SubTown/Castle.webp",
-        "music": "",
+        "music": [
+          {
+            "name": "Calmes",
+            "audio": ""
+          },
+          {
+            "name": "Combat",
+            "audio": ""
+          }
+        ],
         "soundscape": [],
         "sounds": []
       }
@@ -141,13 +186,31 @@
     "name": "Nature",
     "refName": "Nature",
     "icon": "/PlacesImg/Main/Nature.webp",
-    "music": "/Sounds/Forest/music/forest-music.mp3",
+    "music": [
+      {
+        "name": "Calmes",
+        "audio": "/Sounds/Forest/music/forest-music.mp3"
+      },
+      {
+        "name": "Combat",
+        "audio": ""
+      }
+    ],
     "subCategories": [
       {
         "name": "Forêt",
         "subRef": "Foret",
         "image": "/PlacesImg/SubNature/Forest.webp",
-        "music": "",
+        "music": [
+          {
+            "name": "Calmes",
+            "audio": ""
+          },
+          {
+            "name": "Combat",
+            "audio": ""
+          }
+        ],
         "soundscape": [],
         "sounds": []
       },
@@ -155,7 +218,16 @@
         "name": "Champs",
         "subRef": "Champs",
         "image": "/PlacesImg/SubNature/Field.webp",
-        "music": "",
+        "music": [
+          {
+            "name": "Calmes",
+            "audio": ""
+          },
+          {
+            "name": "Combat",
+            "audio": ""
+          }
+        ],
         "soundscape": [],
         "sounds": []
       },
@@ -163,7 +235,16 @@
         "name": "Grotte",
         "subRef": "Grotte",
         "image": "/PlacesImg/SubNature/Cave.webp",
-        "music": "",
+        "music": [
+          {
+            "name": "Calmes",
+            "audio": ""
+          },
+          {
+            "name": "Combat",
+            "audio": ""
+          }
+        ],
         "soundscape": [],
         "sounds": []
       },
@@ -171,7 +252,16 @@
         "name": "Montagne",
         "subRef": "Montagne",
         "image": "/PlacesImg/SubNature/Mountain.webp",
-        "music": "",
+        "music": [
+          {
+            "name": "Calmes",
+            "audio": ""
+          },
+          {
+            "name": "Combat",
+            "audio": ""
+          }
+        ],
         "soundscape": [],
         "sounds": []
       }
@@ -188,7 +278,16 @@
         "name": "Tombe",
         "subRef": "Tombe",
         "image": "/PlacesImg/SubDungeon/Tomb.webp",
-        "music": "",
+        "music": [
+          {
+            "name": "Calmes",
+            "audio": ""
+          },
+          {
+            "name": "Combat",
+            "audio": ""
+          }
+        ],
         "soundscape": [],
         "sounds": []
       },
@@ -196,7 +295,16 @@
         "name": "Donjon",
         "subRef": "Donjon",
         "image": "/PlacesImg/SubDungeon/Dungeon.webp",
-        "music": "",
+        "music": [
+          {
+            "name": "Calmes",
+            "audio": ""
+          },
+          {
+            "name": "Combat",
+            "audio": ""
+          }
+        ],
         "soundscape": [],
         "sounds": []
       },
@@ -204,7 +312,16 @@
         "name": "Temple",
         "subRef": "Temple",
         "image": "/PlacesImg/SubDungeon/Temple.webp",
-        "music": "",
+        "music": [
+          {
+            "name": "Calmes",
+            "audio": ""
+          },
+          {
+            "name": "Combat",
+            "audio": ""
+          }
+        ],
         "soundscape": [],
         "sounds": []
       }
@@ -221,7 +338,16 @@
         "name": "Îles",
         "subRef": "Îles",
         "image": "/PlacesImg/SubSea/Island.webp",
-        "music": "",
+        "music": [
+          {
+            "name": "Calmes",
+            "audio": ""
+          },
+          {
+            "name": "Combat",
+            "audio": ""
+          }
+        ],
         "soundscape": [],
         "sounds": []
       },
@@ -229,7 +355,16 @@
         "name": "Pleine mer",
         "subRef": "Pleine_mer",
         "image": "/PlacesImg/SubSea/Sea.webp",
-        "music": "",
+        "music": [
+          {
+            "name": "Calmes",
+            "audio": ""
+          },
+          {
+            "name": "Combat",
+            "audio": ""
+          }
+        ],
         "soundscape": [],
         "sounds": []
       },
@@ -237,7 +372,16 @@
         "name": "Plage",
         "subRef": "Plage",
         "image": "/PlacesImg/SubSea/Beach.webp",
-        "music": "",
+        "music": [
+          {
+            "name": "Calmes",
+            "audio": ""
+          },
+          {
+            "name": "Combat",
+            "audio": ""
+          }
+        ],
         "soundscape": [],
         "sounds": []
       },
@@ -245,7 +389,16 @@
         "name": "Falaises",
         "subRef": "Falaises",
         "image": "/PlacesImg/SubSea/Cliff.webp",
-        "music": "",
+        "music": [
+          {
+            "name": "Calmes",
+            "audio": ""
+          },
+          {
+            "name": "Combat",
+            "audio": ""
+          }
+        ],
         "soundscape": [],
         "sounds": []
       }

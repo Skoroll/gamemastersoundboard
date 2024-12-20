@@ -100,12 +100,12 @@ function CustomAudioPlayer({ audioSource }) {
         </div>
         <div className="controls__buttons">
           {/* Bouton Loop */}
-          <button onClick={toggleLoop} className={`loop-button btn ${isLooping ? "active" : ""}`}>
+          <button onClick={toggleLoop} aria-label="loop button" className={`loop-button btn ${isLooping ? "active" : ""}`}>
             {isLooping ? <i className="fa-solid fa-repeat"></i> : <i className="fa-solid fa-repeat"></i>}
           </button>
 
           {/* Bouton play/pause */}
-          <button className="controls__play-pause btn" onClick={togglePlay}>
+          <button aria-label="play pause button" className="controls__play-pause btn" onClick={togglePlay}>
             {isPlaying ? <i className="fa-solid fa-pause"></i> : <i className="fa-solid fa-play"></i>}
           </button>
         </div>

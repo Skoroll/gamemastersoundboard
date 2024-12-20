@@ -2,10 +2,10 @@
 @import "../../styles/variables.scss";
 
 .theme-cards {
-  display: grid;
+@include flex-column;
   gap: $gap-base; // Espacement entre les cartes
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
-  // Les cartes prennent une largeur minimale de 150px et occupent le reste de l'espace disponible
+  //grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+
   
   justify-content: center; // Centre les cartes horizontalement
 
@@ -13,6 +13,9 @@
     cursor: pointer;
     position: relative;
     transition: transform 0.3s ease-in-out;
+    width: 75%;
+
+    margin: auto;
 
     p {
       position: absolute;
@@ -36,7 +39,7 @@
     }
 
     &:hover {
-      transform: scale(1.1); // Augmente la taille au survol
+      transform: scale(1.05); // Augmente la taille au survol
       z-index: 999;
       p {
         opacity: 0;
