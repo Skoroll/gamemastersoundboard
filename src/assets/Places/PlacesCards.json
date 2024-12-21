@@ -11,10 +11,12 @@
         "image": "/PlacesImg/SubTown/Market.webp",
         "music": [
           {
+            "id": 1,
             "name": "Calmes",
             "audio": "/Sounds/Town/Market/Music/music.mp3"
           },
           {
+            "id": 2,
             "name": "Combat",
             "audio": "/Sounds/Town/Market/Music/music.mp3"
           }
@@ -53,10 +55,12 @@
         "image": "/PlacesImg/SubTown/tavern.webp",
         "music": [
           {
+            "id": 1,
             "name": "Calmes",
             "audio": "/Sounds/Town/Tavern/Music/music.mp3"
           },
           {
+            "id": 2,
             "name": "Combat",
             "audio": "/Sounds/Town/Market/Music/fight.mp3"
           }
@@ -101,10 +105,12 @@
         "image": "/PlacesImg/SubTown/Shop.webp",
         "music": [
           {
+            "id": 1,
             "name": "Calmes",
             "audio": "/Sounds/Town/Shop/Music/music.mp3"
           },
           {
+            "id": 2,
             "name": "Combat",
             "audio": ""
           }
@@ -143,10 +149,12 @@
         "image": "/PlacesImg/SubTown/Church.webp",
         "music": [
           {
+            "id": 1,
             "name": "Calmes",
             "audio": "/Sounds/Town/Church/Music/music.mp3"
           },
           {
+            "id": 2,
             "name": "Combat",
             "audio": ""
           }
@@ -167,10 +175,12 @@
         "image": "/PlacesImg/SubTown/Castle.webp",
         "music": [
           {
+            "id": 1,
             "name": "Calmes",
             "audio": ""
           },
           {
+            "id": 2,
             "name": "Combat",
             "audio": ""
           }
@@ -186,16 +196,6 @@
     "name": "Nature",
     "refName": "Nature",
     "icon": "/PlacesImg/Main/Nature.webp",
-    "music": [
-      {
-        "name": "Calmes",
-        "audio": "/Sounds/Forest/music/forest-music.mp3"
-      },
-      {
-        "name": "Combat",
-        "audio": ""
-      }
-    ],
     "subCategories": [
       {
         "name": "Forêt",
@@ -203,10 +203,12 @@
         "image": "/PlacesImg/SubNature/Forest.webp",
         "music": [
           {
+            "id": 1,
             "name": "Calmes",
             "audio": ""
           },
           {
+            "id": 2,
             "name": "Combat",
             "audio": ""
           }
@@ -220,10 +222,12 @@
         "image": "/PlacesImg/SubNature/Field.webp",
         "music": [
           {
+            "id": 1,
             "name": "Calmes",
             "audio": ""
           },
           {
+            "id": 2,
             "name": "Combat",
             "audio": ""
           }
@@ -237,10 +241,12 @@
         "image": "/PlacesImg/SubNature/Cave.webp",
         "music": [
           {
+            "id": 1,
             "name": "Calmes",
             "audio": ""
           },
           {
+            "id": 2,
             "name": "Combat",
             "audio": ""
           }
@@ -254,10 +260,12 @@
         "image": "/PlacesImg/SubNature/Mountain.webp",
         "music": [
           {
+            "id": 1,
             "name": "Calmes",
             "audio": ""
           },
           {
+            "id": 2,
             "name": "Combat",
             "audio": ""
           }
@@ -280,10 +288,12 @@
         "image": "/PlacesImg/SubDungeon/Tomb.webp",
         "music": [
           {
+            "id": 1,
             "name": "Calmes",
             "audio": ""
           },
           {
+            "id": 2,
             "name": "Combat",
             "audio": ""
           }
@@ -297,10 +307,12 @@
         "image": "/PlacesImg/SubDungeon/Dungeon.webp",
         "music": [
           {
+            "id": 1,
             "name": "Calmes",
             "audio": ""
           },
           {
+            "id": 2,
             "name": "Combat",
             "audio": ""
           }
@@ -314,10 +326,12 @@
         "image": "/PlacesImg/SubDungeon/Temple.webp",
         "music": [
           {
+            "id": 1,
             "name": "Calmes",
             "audio": ""
           },
           {
+            "id": 2,
             "name": "Combat",
             "audio": ""
           }
@@ -340,10 +354,12 @@
         "image": "/PlacesImg/SubSea/Island.webp",
         "music": [
           {
+            "id": 1,
             "name": "Calmes",
             "audio": ""
           },
           {
+            "id": 2,
             "name": "Combat",
             "audio": ""
           }
@@ -357,10 +373,12 @@
         "image": "/PlacesImg/SubSea/Sea.webp",
         "music": [
           {
+            "id": 1,
             "name": "Calmes",
             "audio": ""
           },
           {
+            "id": 2,
             "name": "Combat",
             "audio": ""
           }
@@ -374,10 +392,12 @@
         "image": "/PlacesImg/SubSea/Beach.webp",
         "music": [
           {
+            "id": 1,
             "name": "Calmes",
             "audio": ""
           },
           {
+            "id": 2,
             "name": "Combat",
             "audio": ""
           }
@@ -391,10 +411,12 @@
         "image": "/PlacesImg/SubSea/Cliff.webp",
         "music": [
           {
+            "id": 1,
             "name": "Calmes",
             "audio": ""
           },
           {
+            "id": 2,
             "name": "Combat",
             "audio": ""
           }

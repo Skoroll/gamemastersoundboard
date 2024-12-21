@@ -44,6 +44,10 @@ function CustomAudioPlayer({ audioSource }) {
     audioRef.current.loop = newLoopState; // Active/désactive le mode loop sur l'élément audio
     setIsLooping(newLoopState);
   };
+// Vérifier si la source est bien définie
+useEffect(() => {
+  console.log("Audio source:", audioSource);
+}, [audioSource]);
 
   // Gestion des événements de l'élément audio
   useEffect(() => {

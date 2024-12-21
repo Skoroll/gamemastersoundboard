@@ -1,9 +1,9 @@
 import React, {useEffect} from "react";
 import { useParams } from "react-router-dom";
 import GenericSounds from "../../components/GenericSounds/GenericSounds"
-import SubDetailsSounds from "../../components/SubDetailsSounds/SubDetailsSounds";
 import Theme from "../../assets/Places/PlacesCards.json";
 import CustomAudioPlayer from "../../components/CustomAudioPlayer/CustomAudioPlayer";
+import SubDetailsMedia from "../../components/SubDetailsMedia/SubDetailsMedia";
 import Banner from "../../components/Banner/Banner";
 import Collapses from "../../components/Collapses/Collapses";
 import GoBack from "../../components/GoBack/GoBack";
@@ -44,10 +44,10 @@ function SubDetails() {
       <Banner image={`${process.env.PUBLIC_URL}${subCategoryDetails.image}`} location={subCategoryDetails.name} />
 
       <p className="heading">Musique</p>
-      <CustomAudioPlayer audioSource={subCategoryDetails.music} />
+        <SubDetailsMedia media={subCategoryDetails.music} type="music" />
 
       <p className="heading">Fonds sonores</p>
-      <CustomAudioPlayer audioSource={subCategoryDetails.soundscape} />
+        <CustomAudioPlayer audioSource={subCategoryDetails.soundscape} />
 
       <div className="div-sounds">
         <p className="heading">Sons</p>
@@ -55,7 +55,7 @@ function SubDetails() {
         <Collapses
           defaultOpen="true"
           title={`Sons de ${subCategoryDetails.name}`}
-          children={<SubDetailsSounds sounds={subCategoryDetails.sounds} />}
+          children={<SubDetailsMedia sounds={subCategoryDetails.sounds} />}
         />
 
         <Collapses
