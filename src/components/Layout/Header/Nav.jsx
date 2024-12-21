@@ -20,6 +20,11 @@ function Nav() {
 
     return (
         <nav className="nav">
+            <div className="nav__links">
+                <button className="nav__links--button">Accueil</button>
+                <button className="nav__links--button">Contact</button>
+                <button className="nav__links--button">A propos</button>
+            </div>
             <div className="nav__theme">
                 {Places.map((place) => (
                     <div

@@ -17,6 +17,27 @@
         z-index: 900;
         margin: auto;
 
+        &__links{
+            @include flex-wrap;
+            justify-content: center;
+            margin: $gap-base;
+            gap: $gap-base;
+            border-bottom: 1px solid ;
+            padding: $padding-elem;
+
+            &--button{
+                background: none;
+                border: none;
+                border-bottom: 1px solid transparent;
+                transition: border-bottom 1s;
+                cursor: pointer;
+                padding: $padding-btn;
+
+                &:hover{
+                    border-bottom: 1px solid $text-base
+                }
+            }
+        }
         &__theme{
             @include ul-reset;
             @include flex-wrap;

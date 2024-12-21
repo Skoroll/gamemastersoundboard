@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import Banner from "../../components/Banner/Banner";
 import Theme from "../../assets/Places/PlacesCards.json"
@@ -6,6 +6,11 @@ import GoBack from "../../components/GoBack/GoBack";
 import "./PlaceDetails.scss";
 
 function PlaceDetails() {
+
+    useEffect(() => {
+      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    }, []);
+
   const { id } = useParams();
   const navigate = useNavigate();
 

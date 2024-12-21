@@ -26,7 +26,6 @@
       &__buttons{
         @include flex-wrap;
         gap: $gap-base;
-        margin: auto 40px auto auto;
       }
 
       &__play-pause{

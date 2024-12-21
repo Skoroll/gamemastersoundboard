@@ -1,5 +1,5 @@
 // ThemeCards.jsx
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './ThemeCards.scss';
 
@@ -10,7 +10,6 @@ function ThemeCards({ places }) {
     navigate(`/${placeRef.toLowerCase()}`);
   };
   
-
   return (
     <div className="theme-cards">
       {places.map((place) => (

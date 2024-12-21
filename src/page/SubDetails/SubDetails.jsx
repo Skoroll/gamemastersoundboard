@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { useParams } from "react-router-dom";
 import GenericSounds from "../../components/GenericSounds/GenericSounds"
 import SubDetailsSounds from "../../components/SubDetailsSounds/SubDetailsSounds";
@@ -11,7 +11,12 @@ import GoUp from "../../components/GoUp/GoUp";
 import "./SubDetails.scss"
 
 function SubDetails() {
+  
   const { id, subRef } = useParams();
+
+    useEffect(() => {
+      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    }, []);
 
   // Trouve les détails du lieu
   const placeDetails = Theme.find(
