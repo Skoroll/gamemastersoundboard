@@ -2,12 +2,10 @@
 @import "../../styles/variables.scss";
 
 .theme-cards {
-@include flex-column;
-  gap: $gap-base; // Espacement entre les cartes
-  //grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
-
-  
-  justify-content: center; // Centre les cartes horizontalement
+  @include flex-column;
+  gap: $gap-base;
+  margin-top: $gap-base;
+  justify-content: center;
 
   &__card {
     cursor: pointer;
@@ -35,9 +33,10 @@
     }
 
     img {
+      display: block;
+      /* Supprime l'espace blanc sous l'image */
       width: 100%;
       height: 100%;
-      margin: auto;
       object-fit: cover;
       border-radius: $radius-base;
     }
@@ -45,6 +44,7 @@
     &:hover {
       transform: scale(1.05); // Augmente la taille au survol
       z-index: 999;
+
       p {
         opacity: 0;
       }

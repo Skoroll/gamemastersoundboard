@@ -1,0 +1,88 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+
+.contact{
+    padding: 0;
+  
+    span{
+      font-weight: 900;
+    }
+  
+    strong{
+      font-weight: 100;
+    }
+    
+  }
+  
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: $padding-elem;
+    max-width: 600px; 
+    margin: 0 auto; 
+    padding: $padding-elem;
+    border: $border-color $primary-color; 
+    border-radius: 8px;
+    background-color: $secondary-background; 
+  }
+  
+  .form_input_div {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-base;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: $gap-base;
+    border: $border-color ;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+  
+  
+    &:focus {
+
+      outline: none;
+    }
+  }
+  
+  textarea {
+    min-height: 250px;
+  }
+  
+  button {
+  
+    background-color: $primary-color;
+ 
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+  
+    &:hover {
+
+    }
+  }
+  
+  
+  .contact__title{
+    width: 300px;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  
+  
+  
+  @media (min-width: 768px) {
+    .contact{
+
+    }
+  }

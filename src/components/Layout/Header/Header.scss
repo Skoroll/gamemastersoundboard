@@ -5,6 +5,7 @@
     padding: $padding-elem;
     @include flex-column;
     gap: $gap-base;
+    margin-bottom: $gap-base;
 
     img{
         width: 70px;
@@ -20,7 +21,7 @@
         &__links{
             @include flex-wrap;
             justify-content: center;
-            margin: $gap-base;
+            margin-bottom: $gap-base;
             gap: $gap-base;
             border-bottom: 1px solid ;
             padding: $padding-elem;

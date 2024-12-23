@@ -1,7 +1,37 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+
 .home{
     .banner{
         img{
             object-position: 0 0%;
+        }
+    }
+
+    &--welcome-text{
+        display: none;
+        padding: $padding_elem;
+        background-color: $secondary-background;
+        margin: 20px auto;
+        border-radius: $radius-base;
+
+        @media only screen and (max-width: 768px){
+            @include flex-column;
+        }
+
+        h1, h2{
+            text-align: center;
+            border: none;
+            margin: 0;
+        }
+
+        h1{
+            font-size: 23px;
+        }
+
+        h2{
+            font-size: 18px;
+            font-style: italic;
         }
     }
 }

@@ -7,7 +7,7 @@
     width: 85vw;
     height: 200px;
     background: center no-repeat cover;
-    margin: 20px auto;
+    margin:  auto;
 
     &__img{
         
@@ -25,13 +25,16 @@
         @include flex-column;
         position: absolute;
         bottom: 0;
-   
         width: 100%;
         box-sizing: border-box;
         background: rgba(0, 0, 0, 0.575);
         z-index: 899;
         padding: $padding_elem;
         color: $text_light;
+
+        @media only screen and (max-width: 768px){
+            display: none;
+        }
 
         .banner__location,
         .banner__flavor {

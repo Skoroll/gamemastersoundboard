@@ -15,15 +15,14 @@ function Nav() {
     // Fonction pour naviguer vers une sous-catégorie
     const handleClick = (placeRef, subRef) => {
         navigate(`/${placeRef.toLowerCase()}/${subRef.toLowerCase()}`);
-        window.location.reload(false);
     };
 
     return (
         <nav className="nav">
             <div className="nav__links">
-                <button className="nav__links--button">Accueil</button>
-                <button className="nav__links--button">Contact</button>
-                <button className="nav__links--button">A propos</button>
+            <button onClick={() => navigate("/")} className="nav__links--button">Accueil</button>
+            <button onClick={() => navigate("/contact")} className="nav__links--button">Contact</button>
+                <button onClick={() => navigate("/a-propos")} className="nav__links--button">A propos</button>
             </div>
             <div className="nav__theme">
                 {Places.map((place) => (
@@ -36,6 +35,7 @@ function Nav() {
                         <p>{place.name}</p>
                         {place.subCategories.length > 0 && (
                             <ul
+                                aria-expanded={openMenu === place.refName}
                                 className={`nav__theme--details ${
                                     openMenu === place.refName ? "nav__theme--open" : ""
                                 }`}

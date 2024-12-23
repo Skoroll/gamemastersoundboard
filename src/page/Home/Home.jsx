@@ -15,6 +15,10 @@ function Home() {
   return (
     <div className="home">
       <Banner image={mainBanner} location={"Gamemaster Soundboard"} flavorText={"Votre compagnon pour créer des ambiances efficace et rapide."}/>
+      <div className="home--welcome-text">
+        <h1>Gamemaster Soundboard</h1>
+        <h2>Votre compagnon pour créer des ambiances efficace et rapide.</h2>
+      </div>
       <ThemeCards places={places} />
     </div>
   );
