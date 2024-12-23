@@ -78,27 +78,29 @@
 .custom-audio-player {
   input[type="range"] {
     width: 100%;
-    appearance: none; // Supprime les styles par défaut pour permettre la personnalisation
+    appearance: none; // Supprime les styles par défaut pour personnalisation complète
+    background: none; // Supprime tout fond par défaut
+    border: none; // Supprime toute bordure
 
     // Style de la piste (track)
     &::-webkit-slider-runnable-track {
       height: 8px;
-      background-color: $primary-color;
+      background-color: $primary-color; // Barre colorée avec $primary-color
       border-radius: 3px;
     }
 
     &::-moz-range-track {
       height: 6px;
-      background-color: $primary-color;
+      background-color: $primary-color; // Barre colorée avec $primary-color
       border-radius: 3px;
     }
 
     &::-ms-track {
       height: 6px;
-      background-color: $primary-color;
+      background-color: $primary-color; // Barre colorée avec $primary-color
       border-radius: 3px;
       border: none;
-      color: transparent; // Supprime les styles de bordure inutiles
+      color: transparent; // Supprime les styles inutiles
     }
 
     // Style du curseur (thumb)
@@ -133,7 +135,7 @@
 
     // Ajout de styles pour le focus
     &:focus {
-      outline: none;
+      outline: none; // Supprime les contours par défaut lors du focus
     }
   }
 }
